@@ -93,7 +93,7 @@
 </head>
 <body>
 <div class="orb one"></div><div class="orb two"></div>
-<nav class="nav"><div class="brand">ОТЗЫВЫ МОИХ КЛИЕНТОВ</div><a class="btn" href="https://t.me/m/6QxXgmE_NThi">Консультация</a></nav>
+<nav class="nav"><div class="brand">ОТЗЫВЫ МОИХ КЛИЕНТОВ</div><a rel="noopener" target="_self" class="btn" href="https://telegram.me/m/6QxXgmE_NThi">Консультация</a></nav>
 <header class="wrap hero">
   <div class="heroMain"><div class="heroBgPhoto"><img src="https://i.postimg.cc/0yT9rbTw/IMG-5940.png" alt="Елена — эксперт по недвижимости"></div><h1>Истории людей, которые уже сделали сильный выбор</h1><p class="lead">Реальные отзывы, кейсы и результаты: переезд, инвестиции и сделки без хаоса.</p><p style="margin-top:24px"><a class="btn" href="#cases">Посмотреть отзывы</a></p></div>
   <div class="glass phone"><div class="mini"><b>Мария, Оренбург</b><p>«Процесс прошёл абсолютно без головной боли, в удовольствие и в очень быстрые сроки...»</p></div><div class="mini"><b>Анастасия</b><p>«С Еленой мы приобрели две замечательные квартиры, дистанционно, и это было полное сопровождение...»</p></div><div class="mini"><b>Илья</b><p>«Елена помогла увидеть в недвижимости не просто квартиру, а сильное инвестиционное решение...»</p></div></div>
@@ -102,9 +102,9 @@
 <section class="wrap section" id="cases"><h2>Отзывы, которые работают как кейсы</h2><p class="sub">Откройте карточку, чтобы прочитать полный текст отзыва.</p><div class="filters"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="Переезд">Переезд</button><button class="filter" data-filter="Инвестиции">Инвестиции</button></div><div class="grid" id="grid"></div></section>
 <section class="wrap section"><h2>Почему мне доверяют</h2><div class="trust"><div class="glass"><h3>Структура</h3><p>Клиент понимает шаги сделки и чувствует ясность.</p></div><div class="glass"><h3>Скорость</h3><p>Быстрый подбор и оперативная связь.</p></div><div class="glass"><h3>Поддержка</h3><p>Сопровождение даже в сложных ситуациях.</p></div><div class="glass"><h3>Результат</h3><p>Покупка квартиры как переход к новому качеству жизни.</p></div></div></section>
 <section class="wrap section" id="add"><div class="glass cta"><h2>Хотите оставить отзыв?</h2><p>Напишите мне в Telegram, прикрепите текст, фото или видео — я аккуратно добавлю ваш отзыв в этот раздел после модерации.</p><a onclick="openTelegramReviews(event)" class="btn" href="https://telegram.me/elena_gumen_grup/102" target="_self" rel="noopener">Оставить отзыв</a></div></section>
-<section class="wrap"><div class="glass cta"><h2>Хотите купить недвижимость без стресса?</h2><p>Я разберу ваш объект, покажу риски и помогу понять, стоит ли идти в сделку.</p><div class="ctaActions"><a class="btn" href="https://t.me/m/6QxXgmE_NThi">Записаться на консультацию</a><a onclick="openTelegramReviews(event)" class="btn" href="https://telegram.me/elena_gumen_grup/102" target="_self" rel="noopener">Посмотреть больше отзывов</a></div></div></section>
+<section class="wrap"><div class="glass cta"><h2>Хотите купить недвижимость без стресса?</h2><p>Я разберу ваш объект, покажу риски и помогу понять, стоит ли идти в сделку.</p><div class="ctaActions"><a rel="noopener" target="_self" class="btn" href="https://telegram.me/m/6QxXgmE_NThi">Записаться на консультацию</a><a onclick="openTelegramReviews(event)" class="btn" href="https://telegram.me/elena_gumen_grup/102" target="_self" rel="noopener">Посмотреть больше отзывов</a></div></div></section>
 </main>
-<div class="modal" id="modal"><div class="box"><button class="close" id="close">×</button><div class="modalMedia" id="modalMedia"></div><div class="modalText"><span class="tag" id="mCat"></span><h3 id="mName"></h3><div class="city" id="mCity"></div><p class="quote" id="mQuote"></p><div class="point"><b>Проблема:</b> <span id="mProblem"></span></div><div class="point"><b>Решение:</b> <span id="mSolution"></span></div><div class="point"><b>Результат:</b> <span id="mResult"></span></div><div class="full" id="mFull"></div><div id="mVideo"></div><p style="margin-top:18px"><a class="btn" href="https://t.me/m/6QxXgmE_NThi">Хочу похожий результат</a></p></div></div></div>
+<div class="modal" id="modal"><div class="box"><button class="close" id="close">×</button><div class="modalMedia" id="modalMedia"></div><div class="modalText"><span class="tag" id="mCat"></span><h3 id="mName"></h3><div class="city" id="mCity"></div><p class="quote" id="mQuote"></p><div class="point"><b>Проблема:</b> <span id="mProblem"></span></div><div class="point"><b>Решение:</b> <span id="mSolution"></span></div><div class="point"><b>Результат:</b> <span id="mResult"></span></div><div class="full" id="mFull"></div><div id="mVideo"></div><p style="margin-top:18px"><a rel="noopener" target="_self" class="btn" href="https://telegram.me/m/6QxXgmE_NThi">Хочу похожий результат</a></p></div></div></div>
 <script>
 'use strict';
 const defaultCases = [
@@ -173,13 +173,15 @@ function openTelegramReviews(event){
   if(event){event.preventDefault();}
   var appLink = 'tg://resolve?domain=elena_gumen_grup&post=102';
   var webLink = 'https://telegram.me/elena_gumen_grup/102';
-  var openedAt = Date.now();
+  var started = Date.now();
+
   window.location.href = appLink;
+
   setTimeout(function(){
-    if(Date.now() - openedAt < 2200){
+    if(Date.now() - started < 2500){
       window.location.href = webLink;
     }
-  }, 900);
+  }, 1000);
 }
 </script>
 
